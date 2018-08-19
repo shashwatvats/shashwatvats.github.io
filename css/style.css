@@ -1,0 +1,148 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("../images/1.jpg");
+
+    /* Set a specific height */
+    min-height: 550px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("../images/2.jpg");
+
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax2 h3{
+	font-size: 55px;
+	padding-top: 120px; 
+	color: #E0ECEB;
+	font-weight: 400;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
+@media (min-width: 100px) and (max-width: 900px){
+	.parallax2 h3{
+		font-size: 35px;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 160px;
+
+	}
+}
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+ .affix + .container-fluid {
+      padding-top: 100px;
+  }
+
+.banner-text {
+  border-left: 5px solid black;
+  padding: 5px 20px;
+  color: #fff;
+  
+}
+#image{
+  padding: 15px 25px;
+  color: #fff;
+  margin-top: 130px;
+}
+#font{
+  font-family: 'Satisfy', cursive;  
+}
+
+.about_section p{
+font-size: 20px;
+}
+.about_section h2{
+ font-family: 'Satisfy', cursive;
+ font-size:40px; 
+ text-align: center;
+ margin: 50px 0 50px 0;
+}
+.exp{
+	color: #01BCFA;
+}
+.skills_section h2{
+ font-family: 'Satisfy', cursive;
+ font-size:40px; 
+ text-align: center;
+ margin: 70px 0 50px 0;
+}
+.skills_section {
+	box-sizing: border-box;
+	}
+
+.skills_section .container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills_section .skills {
+  text-align: center;
+  line-height: 23px;
+  color: white;
+}
+.skills_section p{
+	font-size: 20px;
+}
+
+.contact_me_section h2{
+ font-family: 'Satisfy', cursive;
+ font-size:40px; 
+ color: white;
+ text-align: center;
+ margin: 50px 0 50px 0;
+}
+.contact_me_section{
+	background-color: #1C1B1B;
+}
+#submit:hover{
+background-color: transparent;
+transition-duration: .35s;
+}
+#name,#email,#messagearea{
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid #01BCFA;
+}
+.footer{
+    background-color: #1C1B1B;
+}
+.footer i{
+  padding: 50px 0 0 0;
+}
+hr { 
+    display: block;
+    border-color: grey;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
