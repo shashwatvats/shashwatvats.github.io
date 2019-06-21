@@ -48,6 +48,13 @@ body{
   transition-delay: 0.1s;
   transition-duration: 0.4s;
 }
+
+#download_cv:hover{
+background-color: transparent;
+transition-duration: .35s;
+}
+
+
 .parallax2 {
     /* The image used */
     background-image: url("../images/2.jpg");
@@ -116,29 +123,30 @@ font-size: 20px;
 .exp{
 	color: #01BCFA;
 }
+
+.back {
+    background: none !important;
+}
+
+.skill {
+    background: linear-gradient(90deg, #81EBF5 0%, #31B1CF 100%);
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    border-radius: 0 20px 20px 0;
+}
+
 .skills_section h2{
  font-family: 'Satisfy', cursive;
  font-size:40px; 
  text-align: center;
  margin: 70px 0 50px 0;
 }
-.skills_section {
-	box-sizing: border-box;
-	}
-
-.skills_section .container {
-  width: 100%;
-  background-color: #ddd;
-}
-
-.skills_section .skills {
-  text-align: center;
-  line-height: 23px;
-  color: white;
-}
 .skills_section p{
-	font-size: 20px;
-}
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 7px;
+} 
 
 .contact_me_section h2{
  font-family: 'Satisfy', cursive;
