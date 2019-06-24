@@ -45,6 +45,7 @@ body{
 
 #nav>li>a:hover{
   color: #1C1B1B;
+  cursor: pointer;
   transition-delay: 0.1s;
   transition-duration: 0.4s;
 }
@@ -52,6 +53,17 @@ body{
 #download_cv:hover{
 background-color: transparent;
 transition-duration: .35s;
+}
+
+#mailto a{
+  text-decoration: none;
+  color: #B9B6B6;
+  transition: all .3s ease-in-out;
+}
+
+#mailto a:hover{
+  transition: all .3s ease-in-out;
+  color: #F5F1F1;
 }
 
 
@@ -148,6 +160,288 @@ font-size: 20px;
   padding-top: 7px;
 } 
 
+.my_works_section h2{
+ font-family: 'Satisfy', cursive;
+ font-size:40px; 
+ text-align: center;
+ margin: 70px 0 50px 0;
+}
+.my_works_section p{
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 7px;
+} 
+
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 450px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  
+  font-weight: 200;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-moses {
+  background: -webkit-linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+  background: linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+}
+
+figure.effect-moses img {
+  opacity: 0.85;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-moses h2,
+figure.effect-moses p {
+  padding: 20px;
+  width: 50%;
+  height: 60%;
+  border: 2px solid #fff;
+}
+
+figure.effect-moses h2 {
+  padding: 10px;
+  opacity: 0;
+  width: 60%;
+  height: 50%;
+  text-align: left;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(10px,10px,0);
+  transform: translate3d(10px,10px,0);
+}
+
+figure.effect-moses p {
+  float: right;
+  padding: 10px;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-moses:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-moses:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-moses:hover img {
+  opacity: 0.6;
+}
+
+
+figure.effect-ming {
+  background: #030c17;
+}
+
+figure.effect-ming img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.4,1.4,1);
+  transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+  margin: 10% 0 10px 0;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+  padding: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+figure.effect-ming:hover h2 {
+  -webkit-transform: scale(0.9);
+  opacity: 1;
+  transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+  background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-duke {
+  background: -webkit-linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
+  background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
+}
+
+figure.effect-duke img,
+figure.effect-duke p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-duke:hover img {
+  opacity: 0.1;
+  -webkit-transform: scale3d(2,2,1);
+  transform: scale3d(2,2,1);
+}
+
+figure.effect-duke h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+figure.effect-duke p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid #fff;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
+  -webkit-transform-origin: 50% -100%;
+  transform-origin: 50% -100%;
+}
+
+figure.effect-duke:hover h2,
+figure.effect-duke:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
 .contact_me_section h2{
  font-family: 'Satisfy', cursive;
  font-size:40px; 
@@ -167,6 +461,15 @@ transition-duration: .35s;
 	border:none;
 	border-bottom: 1px solid #01BCFA;
 }
+
+.outer hr{ 
+  
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         60px;
+    width:          1px;       
+}
+
 .footer{
     background-color: #1C1B1B;
 }

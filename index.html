@@ -15,6 +15,7 @@
 <script type="text/javascript" src="js/typed.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/scroll.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="home" class="parallax1">
@@ -29,11 +30,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="nav navbar-nav navbar-right" id="nav">
-			          <li><a href=""><b>Home</b></a></li>
-			          <li><a href="#about"><i class="fa fa-user-o"></i><b> About</b></a></li>
-			          <li><a href="#skills"><i class="fa fa-thumbs-o-up"></i><b> Skills</b></a></li>
-			           <li><a href="#skills"><i class="fa fa-laptop"></i><b> Work</b></a></li>
-			          <li><a href="#contact_me"><i class="fa fa-envelope"></i><b> Contact Me</b></a></li>
+			          <li><a id="N1"><b>Home</b></a></li>
+			          <li><a id="N2"><i class="fa fa-user-o"></i><b> About</b></a></li>
+			          <li><a id="N3"><i class="fa fa-thumbs-o-up"></i><b> Skills</b></a></li>
+			           <li><a id="N4"><i class="fa fa-laptop"></i><b> Work</b></a></li>
+			          <li><a id="N5"><i class="fa fa-envelope"></i><b> Contact Me</b></a></li>
 					</ul>
                 </div>
             </div>
@@ -58,7 +59,7 @@
 	<h2><u>About Me</u></h2><br>
 	<p class="wow fadeInLeft">Hi, My name is <b>Shashwat Vats</b> And I am a Web Developer & Designer. I am from Jaunpur,Uttar Pradesh and has completed my high school education from there only and my intermediate education from Kanpur. I am currently persuing my B.tech from Ajay Kumar Garg Engineering Collge,Ghaziabad. My fields of interest are listening music, playing Cricket and Computer Games and Working on Technology. My Ultimate goal of life is to become a Successfull Software Engineer in a MultiNational Company. I am also a member of Computer Society of India student's chapter AKGEC.</p>
 	<h2 class="wow slideInLeft exp">2+ Years of Experience in Web Development</h2>
-	<h2 class="wow slideInRight exp">5+ Projects on Web Development and more to come</h2>
+	<h2 class="wow slideInRight exp">8+ Projects on Web Development and more to come</h2>
 
 </div>
 
@@ -111,20 +112,93 @@
  <h3 class="col-md-12">Eat.Sleep.Code...Repeat!!</h3>
 </div>
 
+<div id="my_works" class="container my_works_section">
+	<h2><u>My Works</u></h2>
+		<div class="grid">
+					<figure class="effect-moses">
+						<img src="images/5.jpg" alt="img05"/>
+						<figcaption>
+							<h2>Insightone</h2>
+							<p>A Complete Website with Dyanamic content build for an online media company named insightone.</p>
+							<a href="https://insightone.in">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-moses">
+						<img src="images/6.jpg" alt="img06"/>
+						<figcaption>
+							<h2>Initiative'19</h2>
+							<p>Website build for an annual event in college with a complete backend for registration & performing tasks.</p>
+						</figcaption>			
+					</figure>
+		</div>
+
+		<div class="grid">
+					<figure class="effect-ming">
+						<img src="images/7.jpg" alt="img07"/>
+						<figcaption>
+							<h2>DTM</h2>
+							<p>It it an online portal developed for an easy communication between the HOD and faculties.</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-ming">
+						<img src="images/8.jpg" alt="img08"/>
+						<figcaption>
+							<h2>Online Certificate</h2>
+							<p>An online certificate distribution that inputs the name and generates the certificate.</p>
+						</figcaption>			
+					</figure>
+		</div>
+
+			<div class="grid">
+					<figure class="effect-duke">
+						<img src="https://tympanus.net/Development/HoverEffectIdeas/img/27.jpg" alt="img27"/>
+						<figcaption>
+							<h2>Messy <span>Duke</span></h2>
+							<p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-duke">
+						<img src="https://tympanus.net/Development/HoverEffectIdeas/img/17.jpg" alt="img17"/>
+						<figcaption>
+							<h2>Messy <span>Duke</span></h2>
+							<p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+</div>
+
 <div id="contact_me" class="container-fluid contact_me_section">
 	<h2><u>Contact Me</u></h2>
-	<div class="container" id="map" style="width:100%;height:400px; border: 1px solid grey; margin:0 0 50px 0;"></div>
+	<div class="container" id="map" style="width:100%;height:400px; border: 1px solid grey; margin:0 0 50px 0;"></div>   
 
 <script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(25.73937811962164, 82.6668632770818), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 28.669704, lng: 77.486302};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8UXcUDVbgEZ-pTyZC2NfXfAcfhBN7TUw&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8UXcUDVbgEZ-pTyZC2NfXfAcfhBN7TUw&callback=initMap"></script>
+
+<div class="row">
+<div class="col-md-5">
+	<h4 style="color: #E9E9E9;font-weight: 600;letter-spacing: 1px;">Residential Address : </h4>
+	<p style="font-size: 18px; color: #B9B6B6">Flat No.1212A (H2),Jasmine Grove,Ghazibad</p>
+</div>
+<div class="outer col-md-2">
+  <hr>
+</div>
+<div class="col-md-5">
+<p id="mailto"><span style="color: #E9E9E9;font-weight: 600; letter-spacing: 1px;">Email:</span>&nbsp; <a href="mailto:shashwatvats10@gmail.com">shashwatvats10@gmail.com</a></p>
+<p style="color: #B9B6B6"><span style="color: #E9E9E9;font-weight: 600; letter-spacing: 1px;">Phone:</span>&nbsp; (+91)&nbsp; 800-492-2004</p>	
+</div>
+</div>
 
 <h2><u>Leave your message here..</u></h2>
 <form class="container contact_form" method="" action="">
@@ -144,9 +218,9 @@ function myMap() {
 </div>
 <div class="footer container-fluid">
 	<div class="social-media" style="text-align: center;">
-		<a href="#"><i class="fa fa-github" aria-hidden="true" style="font-size: 40px; color: grey;"></i></a>
+		<a href="https://github.com/shashwatvats"><i class="fa fa-github" aria-hidden="true" style="font-size: 40px; color: grey;"></i></a>
 		<a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:7px; color: #4267B2;"></i></a>
-		<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 7px; color: #0077B5;"></i></a>
+		<a href="https://www.linkedin.com/in/svwebdeveloper/"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 7px; color: #0077B5;"></i></a>
 		<a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 7px; color: #E13D62;"></i></a>
 	</div>
 	<hr>
@@ -177,6 +251,50 @@ function myMap() {
         jQuery(this).find('.skillbar-bar').animate({ width: jQuery(this).attr('data-percent') }, 3000);
     		});
 		});
+
+    	var scroll = new Scroll(document.body);
+        var scrollButton = document.getElementById("N2");
+        var about_section = document.querySelector(".about_section");
+        scrollButton.onclick = function() {
+            scroll.toElement(about_section, {
+                duration: 400
+            }).then(function() {
+
+            });
+        };
+
+        var scroll = new Scroll(document.body);
+        var scrollButton = document.getElementById("N3");
+        var skills_section = document.querySelector(".skills_section");
+        scrollButton.onclick = function() {
+            scroll.toElement(skills_section, {
+                duration: 700
+            }).then(function() {
+
+            });
+        };
+
+        var scroll = new Scroll(document.body);
+        var scrollButton = document.getElementById("N4");
+        var my_works_section = document.querySelector(".my_works_section");
+        scrollButton.onclick = function() {
+            scroll.toElement(my_works_section, {
+                duration: 1000
+            }).then(function() {
+
+            });
+        };
+
+        var scroll = new Scroll(document.body);
+        var scrollButton = document.getElementById("N5");
+        var contact_me_section = document.querySelector(".contact_me_section");
+        scrollButton.onclick = function() {
+            scroll.toElement(contact_me_section, {
+                duration: 1100
+            }).then(function() {
+
+            });
+        };
     </script>
 
 </html>
