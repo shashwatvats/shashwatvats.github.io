@@ -399,6 +399,8 @@ figure.effect-duke:hover img {
 figure.effect-duke h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
+  opacity: 0;
+  font-size: 25px;
   -webkit-transform: scale3d(0.8,0.8,1);
   transform: scale3d(0.8,0.8,1);
   -webkit-transform-origin: 50% 100%;
